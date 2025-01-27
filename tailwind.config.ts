@@ -10,7 +10,11 @@ export default {
     extend: {
       colors: {
         background: "var(--background)",
-        foreground: "var(--foreground)",
+      },
+      fontFamily: {
+        AvenirRegular: ['AvenirRegular', 'sans-serif'],
+        AvenirHeavy: ['AvenirBold', 'sans-serif'],
+        AvenirMediumCn: ['AvenirMediumCn', 'sans-serif'],
       },
     },
   },

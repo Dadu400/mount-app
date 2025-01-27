@@ -7,8 +7,26 @@
   --text: #FFFFFF;
 }
 
+@font-face {
+  font-family: 'AvenirRegular';
+  src: url('/fonts/avenir/AvenirNextLTPro-MediumCn.otf') format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'AvenirMedium';
+  src: url('/fonts/avenir/AvenirNextLTPro-MediumCn.otf') format('truetype');
+  font-weight: medium;
+}
+
+@font-face {
+  font-family: 'AvenirBold';
+  src: url('/fonts/avenir/AvenirNextLTPro-Bold.otf') format('truetype');
+  font-weight: bold;
+}
+
 body {
   background: var(--background);
   color: var(--text);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Avenir', sans-serif;
 }
