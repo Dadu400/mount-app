@@ -1,5 +1,5 @@
 import FeaturesBanner from "@/components/banners/FeaturesBanner";
-import DashboardLayout from "./[locale]/(dashboard)/DashboardLayout";
+import DashboardLayout from "./(dashboard)/DashboardLayout";
 import { Banner } from "@/components/banners/Banner";
 import LocationBanner from "@/components/banners/LocationsBanner";
 

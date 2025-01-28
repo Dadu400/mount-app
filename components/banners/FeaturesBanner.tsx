@@ -1,14 +1,21 @@
 import Image from "next/image";
 
+import { useTranslations } from "next-intl";
+
 import skipassIcon from "../../icons/skipass.png";
 import toursIcon from "../../icons/tours.png";
 import cafesIcon from "../../icons/cafes.png";
 
 function FeaturesBanner() {
+  const t = useTranslations("banner");
+
+  const title = t("title", {
+    highlight: `<span style="color: #F3CA00;">${t("highlightedTitle")}</span>`,
+  });
+
   return (
     <section className="w-[90%] md:w-[85%] lg:w-[80%] xl:w-[75%] 2xl:w-[65%] mx-auto mt-20 mb-40">
-      <h2 className="text-3xl md:text-5xl font-bold text-center mb-16">
-        Your Ultimate <span className="text-yellow-300">Snow Adventure</span> Companion
+      <h2 className="text-3xl md:text-5xl font-bold text-center mb-16" dangerouslySetInnerHTML={{ __html: title }}>
       </h2>
       <div className="grid md:grid-cols-3 gap-8">
         {[

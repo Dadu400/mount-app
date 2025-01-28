@@ -1,9 +1,8 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  images: {
-    domains: ["hebbkx1anhila5yf.public.blob.vercel-storage.com"], 
-  },
-};
-
-export default nextConfig;
+import createNextIntlPlugin from 'next-intl/plugin';
+ 
+const withNextIntl = createNextIntlPlugin();
+ 
+/** @type {import('next').NextConfig} */
+const nextConfig = {};
+ 
+export default withNextIntl(nextConfig);
