@@ -4,7 +4,7 @@ import Google from "../../icons/playstore.svg";
 
 export function Banner() {
     return (
-        <section className="w-[90%] md:w-[85%] lg:w-[80%] xl:w-[75%] 2xl:w-[65%] mx-auto my-20">
+        <section className="w-[90%] md:w-[85%] lg:w-[80%] xl:w-[75%] 2xl:w-[65%] mx-auto my-28">
             <div className="flex items-center">
                 <div className="w-1/2 flex flex-col items-start gap-y-10">
                     <h1 className="text-4xl md:text-6xl font-bold leading-tight">

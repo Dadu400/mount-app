@@ -14,7 +14,7 @@ function LocationBanner() {
   ];
 
   return (
-    <section className="w-[90%] md:w-[85%] lg:w-[80%] xl:w-[75%] 2xl:w-[65%] mx-auto my-20">
+    <section className="w-[90%] md:w-[85%] lg:w-[80%] xl:w-[75%] 2xl:w-[65%] mx-auto">
       <div className="flex items-center justify-between">
         <div className="relative h-[600px] w-full order-2 md:order-1">
           {/* Placeholder for potential image or additional content */}
