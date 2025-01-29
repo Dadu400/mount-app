@@ -6,6 +6,7 @@ import BakurianiIcon from "../../icons/bakuriani.png";
 import GudauriIcon from "../../icons/gudauri.png";
 import MestiaIcon from "../../icons/mestia.png";
 import GoderdziIcon from "../../icons/goderdzi.png";
+import BannerImage from "../../icons/screen.png";
 
 function LocationBanner() {
   const t = useTranslations("banner");
@@ -22,13 +23,21 @@ function LocationBanner() {
   ];
 
   return (
-    <section className="w-[90%] md:w-[85%] lg:w-[80%] xl:w-[75%] 2xl:w-[65%] mx-auto">
-      <div className="flex items-center justify-between">
-        <div className="relative h-[600px] w-full order-2 md:order-1">
-
+    <section className="w-[90%] md:w-[85%] lg:w-[80%] xl:w-[75%] 2xl:w-[65%] mx-auto py-20">
+      <div className="flex items-center justify-between gap-20">
+      <div className="w-1/3">
+          <div className="relative">
+            <Image
+              src={BannerImage}
+              alt="Mountapp Banner"
+              layout="responsive"
+              width={500}
+              height={100}
+            />
+          </div>
         </div>
-        <div className="space-y-6 order-1 md:order-2">
-          <h2 className="text-3xl md:text-5xl font-bold leading-tight"
+        <div className="w-2/3 space-y-6 order-1 md:order-2 flex flex-col self-end">
+          <h2 className="text-2xl md:text-5xl font-bold leading-tight"
             dangerouslySetInnerHTML={{ __html: title }}>
           </h2>
           <p className="text-xl text-white/80">

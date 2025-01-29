@@ -14,7 +14,7 @@ function FeaturesBanner() {
   });
 
   return (
-    <section className="w-[90%] md:w-[85%] lg:w-[80%] xl:w-[75%] 2xl:w-[65%] mx-auto mt-20 mb-40">
+    <section className="w-[90%] md:w-[85%] lg:w-[80%] xl:w-[75%] 2xl:w-[65%] mx-auto py-20">
       <h2 className="text-3xl md:text-5xl font-bold text-center mb-16" dangerouslySetInnerHTML={{ __html: title }}>
       </h2>
       <div className="grid md:grid-cols-3 gap-8">
