@@ -2,6 +2,7 @@ import Image from "next/image";
 
 import Logo from "../../icons/logo.png";
 import SnowAnimation from "../animation/SnowAnimation";
+import LocaleSwitcher from "./LocaleSwitcher";
 
 export function Header() {
   return (
@@ -12,7 +13,7 @@ export function Header() {
           <Image src={Logo} alt="Logo" width={160} height={10} />
         </div>
         <div>
-          ENG
+          <LocaleSwitcher />
         </div>
       </div>
     </header>
