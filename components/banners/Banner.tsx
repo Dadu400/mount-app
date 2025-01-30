@@ -50,9 +50,10 @@ export function Banner() {
                         <Image
                             src={BannerImage}
                             alt="Mountapp Banner"
-                            layout="responsive"
+                            quality={100}
                             width={500}
                             height={100}
+                            className="rounded-xl"
                         />
                     </div>
                 </div>

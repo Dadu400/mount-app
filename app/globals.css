@@ -17,7 +17,7 @@
 @font-face {
   font-family: 'AvenirHeavy';
   src: url('../public/fonts/avenir/AvenirHeavy.ttf') format('truetype');
-  font-weight: 900;
+  font-weight: bold;
   font-style: normal;
 }
 

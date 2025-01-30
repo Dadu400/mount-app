@@ -23,35 +23,35 @@ function LocationBanner() {
   ];
 
   return (
-    <section className="w-full sm:w-[90%] md:w-[85%] lg:w-[80%] xl:w-[75%] 2xl:w-[65%] mx-auto my-12 sm:my-24">
+    <section className="w-[96%] sm:w-[90%] md:w-[85%] lg:w-[80%] xl:w-[75%] 2xl:w-[65%] mx-auto my-12 sm:my-24">
       <div className="flex flex-col items-center sm:flex-row justify-between gap-20">
-      <div className="w-1/2 sm:w-1/3">
+        <div className="w-1/3">
           <div className="relative">
             <Image
               src={BannerImage}
               alt="Mountapp Banner"
-              layout="responsive"
+              quality={100}
               width={500}
               height={100}
+              className="rounded-xl"
             />
           </div>
         </div>
-        <div className="w-1/2 sm:w-2/3 space-y-6 order-1 md:order-2 flex flex-col">
+        <div className="w-2/3 space-y-6 order-1 md:order-2 flex flex-col">
           <h2 className="text-3xl md:text-5xl font-bold leading-tight"
             dangerouslySetInnerHTML={{ __html: title }}>
           </h2>
-          <p className="text-xl text-white/80">
-           {t("description")}
+          <p className="text-xl text-white/80 font-avenir">
+            {t("description")}
           </p>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-y-8 gap-x-2">
             {skiDestinations.map((destination, index) => (
               <div key={index} className="relative w-full">
                 <Image
                   src={destination.src}
                   alt={destination.alt}
-                  layout="responsive" 
-                  width={20} 
-                  height={10}
+                  quality={100}
+                  className="w-28 h-28"
                 />
               </div>
             ))}

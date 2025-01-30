@@ -5,6 +5,9 @@ import { useTranslations } from "next-intl";
 import skipassIcon from "../../icons/skipass.png";
 import toursIcon from "../../icons/tours.png";
 import cafesIcon from "../../icons/cafes.png";
+import GuideIcon from "../../icons/guides.png";
+import Accomodation from "../../icons/accomodation.png";
+import Snow from "../../icons/snow.png";
 
 function FeaturesBanner() {
   const t = useTranslations("banner");
@@ -21,17 +24,17 @@ function FeaturesBanner() {
           {
             title: "Ski Passes & Equipment",
             description: "Book passes and rent gear effortlessly.",
-            images: [skipassIcon, skipassIcon],
+            images: [skipassIcon, Snow],
           },
           {
             title: "Hotels & Accommodation",
             description: "Find the perfect slope-side stay.",
-            images: [skipassIcon, cafesIcon],
+            images: [Accomodation, cafesIcon],
           },
           {
             title: "Tours & Guides",
             description: "Discover expert-led mountain experiences.",
-            images: [toursIcon, skipassIcon],
+            images: [toursIcon, GuideIcon],
           },
         ].map((feature, index) => (
           <div
@@ -44,8 +47,7 @@ function FeaturesBanner() {
                   <Image
                     src={src}
                     alt={`${feature.title} icon ${imgIndex + 1}`}
-                    layout="responsive"
-                    className="md:w-8"
+                    quality={100}
                     width={80}
                     height={80}
                   />
