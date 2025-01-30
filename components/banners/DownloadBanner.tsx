@@ -6,7 +6,7 @@ import QR from '../../icons/qr.png';
 
 function DownloadBanner() {
     return (
-        <section className="w-[90%] md:w-[85%] lg:w-[80%] xl:w-[75%] 2xl:w-[65%] mx-auto py-20">
+        <section className="w-[90%] md:w-[85%] lg:w-[80%] xl:w-[75%] 2xl:w-[65%] mx-auto py-10 sm:py-20">
             <div className="bg-white/10 rounded-3xl p-12 backdrop-blur-sm text-center transform hover:scale-105 transition-transform duration-300">
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">
                     Ready to <span className="text-yellow-300">Conquer the Mountains</span>?
@@ -14,12 +14,12 @@ function DownloadBanner() {
                 <p className="text-xl text-white/80 mb-8">
                     Download now and start planning your next exhilarating snow adventure.
                 </p>
-                <div className="flex flex-wrap justify-between items-baseline gap-4">
+                <div className="flex flex-col items-center flex-wrap justify-between sm:items-baseline gap-4">
                     <a
                         href="https://apps.apple.com/ge/app/mountapp/id6466344143"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="w-40 hover:opacity-90"
+                        className="w-28 sm:w-40 hover:opacity-90"
                     >
                         <Image
                             src={Apple}

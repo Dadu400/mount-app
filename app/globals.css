@@ -9,24 +9,20 @@
 
 @font-face {
   font-family: 'AvenirRegular';
-  src: url('/fonts/avenir/AvenirNextLTPro-MediumCn.otf') format('truetype');
+  src: url('../public/fonts/avenir/AvenirRegular.ttf') format('truetype');
   font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: 'AvenirMedium';
-  src: url('/fonts/avenir/AvenirNextLTPro-MediumCn.otf') format('truetype');
-  font-weight: medium;
-}
-
-@font-face {
-  font-family: 'AvenirBold';
-  src: url('/fonts/avenir/AvenirNextLTPro-Bold.otf') format('truetype');
-  font-weight: bold;
+  font-family: 'AvenirHeavy';
+  src: url('../public/fonts/avenir/AvenirHeavy.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
 }
 
 body {
   background: var(--background);
   color: var(--text);
-  font-family: 'Avenir', sans-serif;
 }
+

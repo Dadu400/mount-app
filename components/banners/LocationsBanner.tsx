@@ -23,9 +23,9 @@ function LocationBanner() {
   ];
 
   return (
-    <section className="w-[90%] md:w-[85%] lg:w-[80%] xl:w-[75%] 2xl:w-[65%] mx-auto py-20">
-      <div className="flex items-center justify-between gap-20">
-      <div className="w-1/3">
+    <section className="w-full sm:w-[90%] md:w-[85%] lg:w-[80%] xl:w-[75%] 2xl:w-[65%] mx-auto my-12 sm:my-24">
+      <div className="flex flex-col items-center sm:flex-row justify-between gap-20">
+      <div className="w-1/2 sm:w-1/3">
           <div className="relative">
             <Image
               src={BannerImage}
@@ -36,8 +36,8 @@ function LocationBanner() {
             />
           </div>
         </div>
-        <div className="w-2/3 space-y-6 order-1 md:order-2 flex flex-col self-end">
-          <h2 className="text-2xl md:text-5xl font-bold leading-tight"
+        <div className="w-1/2 sm:w-2/3 space-y-6 order-1 md:order-2 flex flex-col">
+          <h2 className="text-3xl md:text-5xl font-bold leading-tight"
             dangerouslySetInnerHTML={{ __html: title }}>
           </h2>
           <p className="text-xl text-white/80">

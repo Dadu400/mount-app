@@ -24,13 +24,13 @@ const LocaleSwitcher = () => {
         <div className="flex items-center px-2">
             <motion.button
                 onClick={toggleLocale}
-                className="relative w-20 h-10 rounded-full bg-white/30 backdrop-blur-md transition-colors duration-300 flex items-center px-1"
+                className="relative w-16 h-8 sm:w-20 sm:h-10 rounded-full bg-white/30 backdrop-blur-md transition-colors duration-300 flex items-center px-1"
                 aria-label="Toggle Language"
                 onHoverStart={() => setIsHovered(true)}
                 onHoverEnd={() => setIsHovered(false)}
             >
                 <motion.div
-                    className="absolute w-9 h-8 bg-white rounded-full shadow-lg flex items-center justify-center"
+                    className="absolute w-7 h-7 sm:w-9 sm:h-8 bg-white rounded-full shadow-lg flex items-center justify-center"
                     animate={{
                         x: currentLocale === "en" ? "0%" : "100%",
                         scale: isHovered ? 1.1 : 1,
@@ -42,6 +42,7 @@ const LocaleSwitcher = () => {
                         alt="Flag"
                         width={24}
                         height={24}
+                        className="rounded-full"
                     />
                 </motion.div>
             </motion.button>

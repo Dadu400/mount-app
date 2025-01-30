@@ -12,9 +12,9 @@ export default {
         background: "var(--background)",
       },
       fontFamily: {
-        AvenirRegular: ['AvenirRegular', 'sans-serif'],
-        AvenirHeavy: ['AvenirBold', 'sans-serif'],
-        AvenirMediumCn: ['AvenirMediumCn', 'sans-serif'],
+        sans: ["AvenirRegular", "sans-serif"],
+        avenir: ['AvenirRegular', 'sans-serif'],
+        avenirHeavy: ['AvenirHeavy', 'sans-serif'],
       },
     },
   },

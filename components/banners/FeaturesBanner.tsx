@@ -14,10 +14,9 @@ function FeaturesBanner() {
   });
 
   return (
-    <section className="w-[90%] md:w-[85%] lg:w-[80%] xl:w-[75%] 2xl:w-[65%] mx-auto py-20">
-      <h2 className="text-3xl md:text-5xl font-bold text-center mb-16" dangerouslySetInnerHTML={{ __html: title }}>
-      </h2>
-      <div className="grid md:grid-cols-3 gap-8">
+    <section className="w-[90%] sm:w-[80%] md:w-[90%] lg:w-[80%] xl:w-[75%] 2xl:w-[65%] mx-auto py-10 lg:py-24">
+      <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-16" dangerouslySetInnerHTML={{ __html: title }}></h2>
+      <div className="grid md:grid-cols-3 lg:grid-cols-3 gap-8">
         {[
           {
             title: "Ski Passes & Equipment",
@@ -37,24 +36,25 @@ function FeaturesBanner() {
         ].map((feature, index) => (
           <div
             key={index}
-            className="flex flex-col px-4 py-6 justify-between items-center text-center gap-6 bg-white/10 rounded-2xl backdrop-blur-sm transform hover:scale-105 transition-transform duration-300"
+            className="flex flex-col w-[90%] sm:w-[80%] md:w-full px-4 py-6 mx-auto justify-between items-center text-center bg-white/10 rounded-2xl backdrop-blur-sm transform hover:scale-105 transition-transform duration-300"
           >
             <div className="flex gap-8">
               {feature.images.map((src, imgIndex) => (
-                <div key={imgIndex} className="w-24"> 
+                <div key={imgIndex} >
                   <Image
                     src={src}
                     alt={`${feature.title} icon ${imgIndex + 1}`}
                     layout="responsive"
-                    width={100} 
-                    height={100}
+                    className="md:w-8"
+                    width={80}
+                    height={80}
                   />
                 </div>
               ))}
             </div>
-            <div className="flex flex-col mt-4 h-20">
-            <h3 className="text-xl font-bold">{feature.title}</h3>
-            <p className="text-white/80 text-wrap">{feature.description}</p>
+            <div className="flex flex-col items-center justify-center mt-4 h-20">
+              <h3 className="text-xl font-bold">{feature.title}</h3>
+              <p className="text-white/80 text-wrap font-AvenirRegular">{feature.description}</p>
             </div>
           </div>
         ))}
