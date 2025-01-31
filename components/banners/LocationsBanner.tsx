@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 
 import BakurianiIcon from "../../icons/bakuriani.png";
 import GudauriIcon from "../../icons/gudauri.png";
@@ -10,6 +10,7 @@ import BannerImage from "../../icons/screen.png";
 
 function LocationBanner() {
   const t = useTranslations("banner");
+  const locale = useLocale();
 
   const title = t("title", {
     highlight: `<span style="color: #F3CA00;">${t("highlightedTitle")}</span>`,
@@ -38,10 +39,10 @@ function LocationBanner() {
           </div>
         </div>
         <div className="w-2/3 space-y-6 order-1 md:order-2 flex flex-col">
-          <h2 className="text-3xl md:text-5xl font-bold leading-tight"
+          <h2 className={`text-3xl md:text-5xl ${locale === "ka" ? "font-tbcMedium" : "font-avenirHeavy font-extrabold leading-tight"}`}
             dangerouslySetInnerHTML={{ __html: title }}>
           </h2>
-          <p className="text-xl text-white/80 font-avenir">
+          <p className={`text-xl text-white/80 font-avenir ${locale === "ka" ? "font-tbcRegular" : "font-avenir"} `}>
             {t("description")}
           </p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-y-8 gap-x-2">

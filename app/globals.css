@@ -21,6 +21,27 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'TBCxRegular';
+  src: url('../public/fonts/georgian/TBCXRegular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TBCxMedium';
+  src: url('../public/fonts/georgian/TBCXMedium.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TBCxBold';
+  src: url('../public/fonts/georgian/TBCXBold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
 body {
   background: var(--background);
   color: var(--text);

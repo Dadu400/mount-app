@@ -12,9 +12,11 @@ export default {
         background: "var(--background)",
       },
       fontFamily: {
-        sans: ["AvenirRegular", "sans-serif"],
         avenir: ['AvenirRegular', 'sans-serif'],
         avenirHeavy: ['AvenirHeavy', 'sans-serif'],
+        tbcRegular: ['TBCxRegular', 'sans-serif'],
+        tbcBold: ['TBCxBold', 'sans-serif'],
+        tbcMedium: ['TBCxMedium', 'sans-serif'],
       },
     },
   },

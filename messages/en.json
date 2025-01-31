@@ -1,8 +1,25 @@
 {
-    "banner": {
-      "title": "Elevate Your {highlight} to New Heights",
-      "highlightedTitle": "Snow Days",
-      "description": "Discover, book, and conquer the slopes with our all-in-one mountain companion app."
-    }
+  "banner": {
+    "title": "Elevate Your {highlight} to New Heights",
+    "highlightedTitle": "Snow Days",
+    "description": "Discover, book, and conquer the slopes with our all-in-one mountain companion app."
+  },
+  "features": {
+    "title": "Explore the {highlight} with Ease",
+    "highlightedTitle": "Mountains",
+    "skiPassTitle": "Ski Passes & Rentals",
+    "skiPassDescription": "Purchase a ski pass or rent the necessary equipment.",
+    "hotelsTitle": "Hotels & Accommodation",
+    "hotelsDescription": "Find the perfect slope-side stay.",
+    "toursTitle": "Tours & Guides",
+    "toursDescription": "Discover expert-led mountain experiences."
+  },
+  "download": {
+    "title": "Download the {highlight} App",
+    "highlightedTitle": "Snow Days",
+    "description": "Get the app that makes conquering the slopes a breeze."
+  }, 
+  "footer": {
+    "rights": " MOUNT, All rights reserved."
   }
-  
+}
