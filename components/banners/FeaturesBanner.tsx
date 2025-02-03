@@ -37,7 +37,7 @@ function FeaturesBanner() {
   return (
     <section className="w-[90%] sm:w-[80%] md:w-[90%] lg:w-[80%] xl:w-[75%] 2xl:w-[65%] mx-auto py-10 lg:py-24">
       <h2
-        className={`text-center mb-16 ${locale === "ka" ? "font-tbcMedium text-3xl sm:text-3xl md:text-4xl" : "font-AvenirHeavy text-3xl sm:text-4xl md:text-5xl font-extrabold"}`}
+        className={`mb-14 text-center ${locale === "ka" ? "font-tbcBold text-3xl sm:text-3xl md:text-4xl" : "font-avenir text-3xl sm:text-4xl md:text-5xl font-extrabold"}`}
         dangerouslySetInnerHTML={{ __html: title }}
       ></h2>
       <div className="grid md:grid-cols-3 lg:grid-cols-3 gap-8">
