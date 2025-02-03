@@ -10,10 +10,13 @@ function Footer() {
 
   return (
     <footer className="border-t border-white/20 mt-10 sm:mt-20 py-10">
-      <div className="text-white/60 flex flex-col items-center gap-2 sm:flex-row sm:justify-center sm:relative mx-8">
-        <div className="flex items-center text-center">
+      <div className="text-white/60 flex flex-col items-center gap-4 sm:flex-row sm:justify-center sm:relative mx-8">
+        <div className="flex flex-col sm:flex-row items-center gap-2 text-center">
           <p className={`text-sm ${locale === "ka" ? "font-tbcMedium" : "font-avenir"}`} >
             © {new Date().getFullYear()}
+            {t("mount")}
+          </p>
+          <p className={`text-sm ${locale === "ka" ? "font-tbcMedium" : "font-avenir"}`}>
             {t("rights")}
           </p>
         </div>
