@@ -20,6 +20,7 @@
     "description": "Get the app that makes conquering the slopes a breeze."
   }, 
   "footer": {
-    "rights": " MOUNT, All rights reserved."
+    "mount": " MOUNT ",
+    "rights": "All rights reserved."
   }
 }
