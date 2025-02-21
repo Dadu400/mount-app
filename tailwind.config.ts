@@ -14,9 +14,8 @@ export default {
       fontFamily: {
         avenir: ['AvenirRegular', 'sans-serif'],
         avenirHeavy: ['AvenirHeavy', 'sans-serif'],
-        tbcRegular: ['TBCxRegular', 'sans-serif'],
-        tbcBold: ['TBCxBold', 'sans-serif'],
-        tbcMedium: ['TBCxMedium', 'sans-serif'],
+        HelveticaBold: ['HelveticaBold', 'sans-serif'],
+        helvetica: ['Helvetica', 'sans-serif'],
       },
     },
   },

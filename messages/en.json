@@ -1,23 +1,26 @@
 {
   "banner": {
-    "title": "Elevate Your {highlight} to New Heights",
+    "title": "Mount Your Way - Elevate Your {highlight}", 
     "highlightedTitle": "Snow Days",
-    "description": "Discover, book, and conquer the slopes with our all-in-one mountain companion app."
+    "description": "MOUNT lets you discover, book, and conquer the mountains your way."
   },
   "features": {
     "title": "Explore the {highlight} with Ease",
     "highlightedTitle": "Mountains",
-    "skiPassTitle": "Ski Passes & Rentals",
-    "skiPassDescription": "Purchase a ski pass or rent the necessary equipment.",
-    "hotelsTitle": "Hotels & Accommodation",
-    "hotelsDescription": "Find the perfect slope-side stay.",
-    "toursTitle": "Tours & Guides",
-    "toursDescription": "Discover expert-led mountain experiences."
+    "skiPassTitle": "Ski Passes",
+    "skiPassDescription": "Purchase a ski pass or top up your balance.",
+    "toursTitle": "Ski/Snowboard Lessons",
+    "toursDescription": "Book skiing/snowboarding lessons with experienced instructors."
+  },
+  "location": {
+    "title": "Find Your {highlight}",
+    "highlightedTitle": "Mountain",
+    "description": "Discover the best ski resorts and mountain ranges near you."
   },
   "download": {
     "title": "Download the {highlight} App",
-    "highlightedTitle": "Snow Days",
-    "description": "Get the app that makes conquering the slopes a breeze."
+    "highlightedTitle": "MOUNT",
+    "description": "Skip the lines – get your lift pass in seconds Find expert instructors and mountain guides."
   }, 
   "footer": {
     "mount": " MOUNT ",
