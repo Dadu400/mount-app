@@ -15,9 +15,9 @@ function DownloadBanner() {
 
     return (
         <section className="w-[85%] md:w-[85%] lg:w-[80%] xl:w-[70%] 2xl:w-[65%] mx-auto py-10 sm:py-16">
-            <div className="bg-white/10 rounded-3xl p-10 text-pretty text-center backdrop-blur-sm transform hover:scale-105 transition-transform duration-300 flex flex-col gap-y-4">
+            <div className="bg-white/10 rounded-3xl p-10 text-pretty text-center backdrop-blur-sm transform hover:scale-105 transition-transform duration-300 flex flex-col gap-y-8">
                 <h2
-                    className={`leading-tight text-white ${locale === "ka" ? "font-tbcBold text-4xl" : "font-avenirHeavy font-extrabold text-4xl"}`}
+                    className={`text-center ${locale === "ka" ? "font-HelveticaBold text-3xl sm:text-3xl md:text-4xl" : "font-avenir text-3xl sm:text-4xl md:text-5xl font-extrabold"}`}
                     dangerouslySetInnerHTML={{ __html: title }}
                 ></h2>
                 <div className="flex justify-center">
@@ -32,7 +32,7 @@ function DownloadBanner() {
                         priority
                     />
                 </div>
-                <p className={`text-white/80 my-4 ${locale === "ka" ? "font-tbcRegular text-lg" : "font-avenir text-xl"}`}>
+                <p className={`text-white/80 my-4 ${locale === "ka" ? "font-Helvetica text-lg" : "font-avenir text-xl"}`}>
                     {t("description")}
                 </p>
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
