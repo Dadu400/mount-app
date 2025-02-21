@@ -45,14 +45,14 @@ function LocationBanner() {
           <p className={`text-lg text-gray-300 ${locale === "ka" ? "font-Helvetica" : "font-avenirHeavy text-xl"} w-[90%] mx-auto lg:mx-0`}>
             {t("description")}
           </p>
-          <div className="grid grid-cols-2 sm:grid-cols-4 self-start mx-auto gap-x-4">
+          <div className="grid grid-cols-2 sm:grid-cols-4 self-start mx-auto gap-x-4 gap-y-6">
             {skiDestinations.map((destination, index) => (
               <div key={index} className="relative w-full flex">
                 <Image
                   src={destination.src}
                   alt={destination.alt}
                   quality={100}
-                  className="w-[70px] sm:w-[80px] md:w-[90px] lg:w-[80px] xl:w-[90px] h-auto object-contain"
+                  className="w-[80px] sm:w-[80px] md:w-[90px] lg:w-[80px] xl:w-[90px] h-auto object-contain"
                 />
               </div>
             ))}
